@@ -251,28 +251,43 @@ header {
    RESPONSIVE
    ================================= */
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
     .hero {
-        min-height: 420px;
+        min-height: 850px;
+        padding: 60px 20px;
+    }
 
-        padding: 60px 15px;
+    .hero-content {
+        transform: translateY(50px);
     }
 
     .hero-logo {
-        width: 80%;
+        width: min(350px, 85%);
+        margin-bottom: 20px;
     }
 
     .hero-subtitle {
-        font-size: 0.95rem;
-
+        font-size: 1.1rem;
         letter-spacing: 3px;
+        line-height: 1.4;
     }
 
     .hero-description {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-top: 15px;
     }
 
+    .section-divider {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .section-divider span {
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
 }
 
 /* =================================
