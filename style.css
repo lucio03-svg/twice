@@ -837,16 +837,97 @@ header {
 
     box-shadow:
         0 4px 10px rgba(0, 0, 0, 0.15);
-}/* =================================
-   ¿CÓMO CONOCERLAS?
-   ================================= */
+}
 
-.how-to-know {
-    max-width: 1100px;
+@media (max-width: 768px) {
 
-    margin: 60px auto;
+    .how-to-know {
+        padding: 0 15px;
+    }
 
-    padding: 0 20px;
+
+    .table-container {
+        background: transparent;
+
+        box-shadow: none;
+
+        overflow: visible;
+    }
+
+
+    .members-table,
+    .members-table tbody,
+    .members-table tr,
+    .members-table td {
+        display: block;
+
+        width: 100%;
+    }
+
+
+    .members-table thead {
+        display: none;
+    }
+
+
+    .members-table tbody tr {
+
+        margin-bottom: 20px;
+
+        padding: 15px;
+
+        border-radius: 15px;
+
+        background: white;
+
+        box-shadow:
+            0 5px 15px rgba(0, 0, 0, 0.10);
+    }
+
+
+    .members-table tbody tr:hover {
+        transform: translateY(-3px);
+    }
+
+
+    .members-table td {
+
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 15px;
+
+        padding: 10px 0;
+
+        border-bottom: 1px solid #eee;
+
+        text-align: right;
+    }
+
+
+    .members-table td:last-child {
+        border-bottom: none;
+    }
+
+
+    .members-table td::before {
+
+        content: attr(data-label);
+
+        font-weight: 600;
+
+        color: #888;
+
+        text-align: left;
+    }
+
+
+    .content-name {
+        justify-content: flex-end;
+    }
+
 }
 
 /* =========================
